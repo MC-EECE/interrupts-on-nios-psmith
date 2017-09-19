@@ -3,9 +3,9 @@
 # This script creates the blank_project application in this directory.
 
 
-BSP_DIR=C:/Users/psmith04/Documents/FPGA/InterruptNIOS_bsp/
+BSP_DIR=C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/
 QUARTUS_PROJECT_DIR=C:/altera/16.0/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/
-NIOS2_APP_GEN_ARGS="--elf-name InterruptNIOS.elf --no-src --set OBJDUMP_INCLUDE_SOURCE 1"
+NIOS2_APP_GEN_ARGS="--elf-name InterruptsNIOS.elf --no-src --set OBJDUMP_INCLUDE_SOURCE 1"
 
 
 # First, check to see if $SOPC_KIT_NIOS2 environmental variable is set.
