@@ -6,11 +6,10 @@
  */
 
 #include "buttonISR.h"
-//#include "io.h"
+#include "io.h"
 #include "system.h"
-//#include "sys\alt_irq.h"
 #include "altera_avalon_pio_regs.h"
-//#include "HexDisplay.h"
+#include "HexDisplay.h"
 #include "alt_types.h"
 
 #ifdef ALT_ENHANCED_INTERRUPT_API_PRESENT
@@ -61,5 +60,5 @@ void buttonISR(void* context, alt_u32 id)
      * interrupt in systems with high processor -> pio latency and fast
      * interrupts.
      */
-    //IORD_ALTERA_AVALON_PIO_EDGE_CAP(PUSHBUTTONS_BASE);
+    IORD_ALTERA_AVALON_PIO_EDGE_CAP(PUSHBUTTONS_BASE);
 }

@@ -10,7 +10,6 @@
 #include "io.h"
 #include "system.h"
 
-extern volatile alt_u8 leading_zeros;
 extern volatile alt_u8 display_as_bcd;
 
 void toggleBCDHEX(){
