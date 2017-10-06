@@ -35,7 +35,8 @@ void seven_seg_bcd(alt_u32* base, alt_u16 num, alt_u8 leading_zeros) {
 	int bcd_total = 0;
 	int k = 24;
 	for (j=3; j>=0; j--) {
-		if (leading_zeros || bcd[j] > 0 || trailing_zeros) {
+		if (leading_zeros || bcd[j] > 0 || trailing_zeros)
+		{
 			bcd_total += BCD_CODES[bcd[j]] << k;
 			trailing_zeros = 1;
 		}

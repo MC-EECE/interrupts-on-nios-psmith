@@ -9,7 +9,7 @@
 #define HEXDISPLAY_H_
 
 #include "alt_types.h"
-
+	void toggleBCDHEX();
 	void HexDisplay(alt_u32 * base, alt_u16 num);
 
 #endif /* HEXDISPLAY_H_ */

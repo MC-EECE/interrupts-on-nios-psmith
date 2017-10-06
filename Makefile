@@ -139,7 +139,7 @@ ACDS_VERSION := 16.0
 # Define path to the application ELF. 
 # It may be used by the makefile fragments so is defined before including them. 
 # 
-ELF := EECE321F16_InterruptDemo.elf
+ELF := InterruptsNIOS.elf
 
 # Paths to C, C++, and assembly source files.
 C_SRCS += HexDisplay.c
@@ -183,7 +183,7 @@ CRT0 :=
 SYS_LIB :=
 
 # Define path to the root of the BSP.
-BSP_ROOT_DIR := C:/Users/brent.horine/Documents/FPGA/EECE321F16_InterruptDemo_bsp/
+BSP_ROOT_DIR := C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/
 
 # List of application specific include directories, library directories and library names
 APP_INCLUDE_DIRS :=
@@ -194,7 +194,7 @@ APP_LIBRARY_NAMES :=
 BUILD_PRE_PROCESS :=
 BUILD_POST_PROCESS :=
 
-QUARTUS_PROJECT_DIR := C:/Users/brent.horine/Documents/FPGA/DE2-115_Media_ComputerV16/verilog/
+QUARTUS_PROJECT_DIR := C:/altera/16.0/University_Program/Computer_Systems/DE2-115/DE2-115_Media_Computer/verilog/
 
 
 #END GENERATED
