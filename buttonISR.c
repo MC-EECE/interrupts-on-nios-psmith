@@ -49,10 +49,14 @@ void buttonISR(void* context, alt_u32 id)
 		if (timersetting&0x8) // if timer is off
 		{
 		timersetting = timerOn; // turn on
+		LCD_cursor(0,0);
+		LCD_text("Timer Running ...           ");
 		}
 		else
 		{
 		timersetting = timerOff; // if timer is on, turn off
+		LCD_cursor(0,0);
+		LCD_text("Timer Stopped ...            ");
 		}
 		IOWR(INTERVAL_TIMER_BASE, 1 ,timersetting);     // based on the if statement, will write 0x7 or 0xB and activate/deactivate
 		break;
@@ -60,10 +64,14 @@ void buttonISR(void* context, alt_u32 id)
 	case KEY2:    //0x4
 		*pCount = 0;        //resets counter to 0
 		HexDisplay((alt_u32*)HEX3_HEX0_BASE, *pCount); //displays count
+		LCD_cursor(0,1);
+		LCD_text("Key 2 Pressed ...                ");
 		break;
 
 	case KEY3:    //0x8
 		toggleBCDHEX(); //toggles hex or BCD display
+		LCD_cursor(0,1);								//Placing cursor on bottom left block of LCD
+		LCD_text("Key 3 Pressed ...                ");
 		break;
 	default:  //included a default statement to prevent any errors
 		break;

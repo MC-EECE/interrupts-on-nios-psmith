@@ -196,7 +196,7 @@ LOAD c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5
                 0x0000000000000248                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
                 0x0000000000000020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
 
-.text           0x0000000000000248     0x4084
+.text           0x0000000000000248     0x40e4
                 [!provide]                        PROVIDE (stext, ABSOLUTE (.))
  *(.interp)
  *(.hash)
@@ -248,173 +248,173 @@ LOAD c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5
                 0x00000000000002c8                HexDisplay
  .text          0x0000000000000358       0x94 obj/default/InterruptDemo.o
                 0x0000000000000358                main
- .text          0x00000000000003ec       0xf8 obj/default/buttonISR.o
+ .text          0x00000000000003ec      0x158 obj/default/buttonISR.o
                 0x00000000000003ec                buttonISR
- .text          0x00000000000004e4      0x110 obj/default/lcd.o
-                0x00000000000004e4                LCD_cursor
-                0x0000000000000550                LCD_text
-                0x00000000000005bc                LCD_cursor_off
- .text          0x00000000000005f4      0x2bc obj/default/seven_seg_bcd.o
-                0x00000000000005f4                seven_seg_bcd
- .text          0x00000000000008b0      0x14c obj/default/seven_seg_hex.o
-                0x00000000000008b0                seven_seg_hex
- .text          0x00000000000009fc       0x78 obj/default/timerISR.o
-                0x00000000000009fc                timerISR
- .text          0x0000000000000a74        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
- .text.memcpy   0x0000000000000a74      0x148 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
-                0x0000000000000a74                memcpy
- .text          0x0000000000000bbc      0x1b0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
-                0x0000000000000bbc                alt_irq_register
- .text          0x0000000000000d6c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .text          0x0000000000000d6c       0xec C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
-                0x0000000000000dd4                alt_load
- .text          0x0000000000000e58       0x7c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
-                0x0000000000000e58                alt_main
- .text          0x0000000000000ed4      0x394 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x0000000000000f0c                alt_irq_init
-                0x0000000000000f44                alt_sys_init
- .text          0x0000000000001268      0x164 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
-                0x0000000000001268                altera_avalon_jtag_uart_read_fd
-                0x00000000000012c8                altera_avalon_jtag_uart_write_fd
-                0x0000000000001328                altera_avalon_jtag_uart_close_fd
-                0x0000000000001378                altera_avalon_jtag_uart_ioctl_fd
- .text          0x00000000000013cc      0x3dc C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
-                0x00000000000013cc                altera_avalon_jtag_uart_init
-                0x0000000000001740                altera_avalon_jtag_uart_close
- .text          0x00000000000017a8       0xf0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
-                0x00000000000017a8                altera_avalon_jtag_uart_ioctl
- .text          0x0000000000001898      0x21c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
-                0x0000000000001898                altera_avalon_jtag_uart_read
- .text          0x0000000000001ab4      0x224 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
-                0x0000000000001ab4                altera_avalon_jtag_uart_write
- .text          0x0000000000001cd8      0x100 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
-                0x0000000000001d54                alt_avalon_timer_sc_init
- .text          0x0000000000001dd8      0x4f8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
-                0x0000000000001dd8                get_DDRAM_addr
-                0x0000000000001e4c                alt_up_character_lcd_send_cmd
-                0x0000000000001e8c                alt_up_character_lcd_init
-                0x0000000000001ec4                alt_up_character_lcd_open_dev
-                0x0000000000001f04                alt_up_character_lcd_write
-                0x0000000000001f80                alt_up_character_lcd_string
-                0x0000000000001ff8                alt_up_character_lcd_write_fd
-                0x0000000000002048                alt_up_character_lcd_set_cursor_pos
-                0x00000000000020bc                alt_up_character_lcd_shift_cursor
-                0x0000000000002148                alt_up_character_lcd_shift_display
-                0x00000000000021d4                alt_up_character_lcd_erase_pos
-                0x0000000000002260                alt_up_character_lcd_cursor_off
-                0x0000000000002298                alt_up_character_lcd_cursor_blink_on
- .text          0x00000000000022d0      0x390 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
-                0x00000000000022d0                alt_up_irda_enable_read_interrupt
-                0x000000000000232c                alt_up_irda_disable_read_interrupt
-                0x000000000000238c                alt_up_irda_get_used_space_in_read_FIFO
-                0x00000000000023cc                alt_up_irda_get_available_space_in_write_FIFO
-                0x0000000000002408                alt_up_irda_check_parity
-                0x000000000000244c                alt_up_irda_write_data
-                0x000000000000248c                alt_up_irda_read_data
-                0x0000000000002500                alt_up_irda_read_fd
-                0x0000000000002590                alt_up_irda_write_fd
-                0x0000000000002620                alt_up_irda_open_dev
- .text          0x0000000000002660      0x6b4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
-                0x0000000000002660                read_RI_bit
-                0x0000000000002694                read_RE_bit
-                0x00000000000026c4                read_CE_bit
-                0x00000000000026f8                read_num_bytes_available
-                0x0000000000002728                read_data_valid
-                0x000000000000275c                read_data_byte
-                0x0000000000002788                alt_up_ps2_init
-                0x0000000000002850                alt_up_ps2_enable_read_interrupt
-                0x00000000000028ac                alt_up_ps2_disable_read_interrupt
-                0x000000000000290c                alt_up_ps2_write_data_byte
-                0x0000000000002980                alt_up_ps2_wait_for_ack
-                0x00000000000029e8                alt_up_ps2_write_data_byte_with_ack
-                0x0000000000002a4c                alt_up_ps2_read_data_byte_timeout
-                0x0000000000002ae8                alt_up_ps2_read_data_byte
-                0x0000000000002b58                alt_up_ps2_clear_fifo
-                0x0000000000002bb0                alt_up_ps2_read_fd
-                0x0000000000002c3c                alt_up_ps2_write_fd
-                0x0000000000002cd4                alt_up_ps2_open_dev
- .text          0x0000000000002d14      0x394 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
-                0x0000000000002d14                alt_up_rs232_enable_read_interrupt
-                0x0000000000002d70                alt_up_rs232_disable_read_interrupt
-                0x0000000000002dd0                alt_up_rs232_get_used_space_in_read_FIFO
-                0x0000000000002e10                alt_up_rs232_get_available_space_in_write_FIFO
-                0x0000000000002e4c                alt_up_rs232_check_parity
-                0x0000000000002e90                alt_up_rs232_write_data
-                0x0000000000002ed0                alt_up_rs232_read_data
-                0x0000000000002f44                alt_up_rs232_read_fd
-                0x0000000000002fd4                alt_up_rs232_write_fd
-                0x0000000000003068                alt_up_rs232_open_dev
- .text          0x00000000000030a8      0x140 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
-                0x00000000000030a8                alt_alarm_start
- .text          0x00000000000031e8      0x120 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
-                0x0000000000003238                close
- .text          0x0000000000003308       0x20 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
-                0x0000000000003308                alt_dcache_flush_all
- .text          0x0000000000003328       0x2c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
- .text          0x0000000000003354       0xf4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
-                0x00000000000033a4                alt_dev_llist_insert
- .text          0x0000000000003448       0x60 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
-                0x0000000000003448                _do_ctors
- .text          0x00000000000034a8       0x60 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
-                0x00000000000034a8                _do_dtors
- .text          0x0000000000003508        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
- .text          0x0000000000003508       0x90 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
-                0x0000000000003508                alt_find_dev
- .text          0x0000000000003598       0x34 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
-                0x0000000000003598                alt_icache_flush_all
- .text          0x00000000000035cc      0x140 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
-                0x0000000000003690                alt_io_redirect
- .text          0x000000000000370c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .text          0x000000000000370c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .text          0x000000000000370c      0x274 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
-                0x0000000000003828                open
- .text          0x0000000000003980       0x64 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
-                0x0000000000003980                alt_release_fd
- .text          0x00000000000039e4      0x1a4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
-                0x00000000000039e4                alt_alarm_stop
-                0x0000000000003a80                alt_tick
- .text          0x0000000000003b88       0x24 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
-                0x0000000000003b88                altera_nios2_gen2_irq_init
- .text          0x0000000000003bac        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .text          0x0000000000003bac      0x114 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
-                0x0000000000003bac                alt_find_file
- .text          0x0000000000003cc0       0xb4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
-                0x0000000000003cc0                alt_get_fd
- .text          0x0000000000003d74       0x90 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
-                0x0000000000003d74                alt_icache_flush
- .text          0x0000000000003e04       0x9c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x0000000000003e04                alt_exception_cause_generated_bad_addr
- .text          0x0000000000003ea0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
- .text.atexit   0x0000000000003ea0       0x14 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
-                0x0000000000003ea0                atexit
- .text          0x0000000000003eb4        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
- .text.exit     0x0000000000003eb4       0x38 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
-                0x0000000000003eb4                exit
- .text          0x0000000000003eec        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
- .text          0x0000000000003eec        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
- .text          0x0000000000003eec        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
- .text.memcmp   0x0000000000003eec       0x7c c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
-                0x0000000000003eec                memcmp
- .text          0x0000000000003f68        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
- .text.strlen   0x0000000000003f68       0x98 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
-                0x0000000000003f68                strlen
- .text          0x0000000000004000        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
+ .text          0x0000000000000544      0x110 obj/default/lcd.o
+                0x0000000000000544                LCD_cursor
+                0x00000000000005b0                LCD_text
+                0x000000000000061c                LCD_cursor_off
+ .text          0x0000000000000654      0x2bc obj/default/seven_seg_bcd.o
+                0x0000000000000654                seven_seg_bcd
+ .text          0x0000000000000910      0x14c obj/default/seven_seg_hex.o
+                0x0000000000000910                seven_seg_hex
+ .text          0x0000000000000a5c       0x78 obj/default/timerISR.o
+                0x0000000000000a5c                timerISR
+ .text          0x0000000000000ad4        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
+ .text.memcpy   0x0000000000000ad4      0x148 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
+                0x0000000000000ad4                memcpy
+ .text          0x0000000000000c1c      0x1b0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
+                0x0000000000000c1c                alt_irq_register
+ .text          0x0000000000000dcc        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .text          0x0000000000000dcc       0xec C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
+                0x0000000000000e34                alt_load
+ .text          0x0000000000000eb8       0x7c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
+                0x0000000000000eb8                alt_main
+ .text          0x0000000000000f34      0x394 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x0000000000000f6c                alt_irq_init
+                0x0000000000000fa4                alt_sys_init
+ .text          0x00000000000012c8      0x164 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+                0x00000000000012c8                altera_avalon_jtag_uart_read_fd
+                0x0000000000001328                altera_avalon_jtag_uart_write_fd
+                0x0000000000001388                altera_avalon_jtag_uart_close_fd
+                0x00000000000013d8                altera_avalon_jtag_uart_ioctl_fd
+ .text          0x000000000000142c      0x3dc C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+                0x000000000000142c                altera_avalon_jtag_uart_init
+                0x00000000000017a0                altera_avalon_jtag_uart_close
+ .text          0x0000000000001808       0xf0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+                0x0000000000001808                altera_avalon_jtag_uart_ioctl
+ .text          0x00000000000018f8      0x21c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+                0x00000000000018f8                altera_avalon_jtag_uart_read
+ .text          0x0000000000001b14      0x224 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+                0x0000000000001b14                altera_avalon_jtag_uart_write
+ .text          0x0000000000001d38      0x100 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+                0x0000000000001db4                alt_avalon_timer_sc_init
+ .text          0x0000000000001e38      0x4f8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
+                0x0000000000001e38                get_DDRAM_addr
+                0x0000000000001eac                alt_up_character_lcd_send_cmd
+                0x0000000000001eec                alt_up_character_lcd_init
+                0x0000000000001f24                alt_up_character_lcd_open_dev
+                0x0000000000001f64                alt_up_character_lcd_write
+                0x0000000000001fe0                alt_up_character_lcd_string
+                0x0000000000002058                alt_up_character_lcd_write_fd
+                0x00000000000020a8                alt_up_character_lcd_set_cursor_pos
+                0x000000000000211c                alt_up_character_lcd_shift_cursor
+                0x00000000000021a8                alt_up_character_lcd_shift_display
+                0x0000000000002234                alt_up_character_lcd_erase_pos
+                0x00000000000022c0                alt_up_character_lcd_cursor_off
+                0x00000000000022f8                alt_up_character_lcd_cursor_blink_on
+ .text          0x0000000000002330      0x390 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
+                0x0000000000002330                alt_up_irda_enable_read_interrupt
+                0x000000000000238c                alt_up_irda_disable_read_interrupt
+                0x00000000000023ec                alt_up_irda_get_used_space_in_read_FIFO
+                0x000000000000242c                alt_up_irda_get_available_space_in_write_FIFO
+                0x0000000000002468                alt_up_irda_check_parity
+                0x00000000000024ac                alt_up_irda_write_data
+                0x00000000000024ec                alt_up_irda_read_data
+                0x0000000000002560                alt_up_irda_read_fd
+                0x00000000000025f0                alt_up_irda_write_fd
+                0x0000000000002680                alt_up_irda_open_dev
+ .text          0x00000000000026c0      0x6b4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+                0x00000000000026c0                read_RI_bit
+                0x00000000000026f4                read_RE_bit
+                0x0000000000002724                read_CE_bit
+                0x0000000000002758                read_num_bytes_available
+                0x0000000000002788                read_data_valid
+                0x00000000000027bc                read_data_byte
+                0x00000000000027e8                alt_up_ps2_init
+                0x00000000000028b0                alt_up_ps2_enable_read_interrupt
+                0x000000000000290c                alt_up_ps2_disable_read_interrupt
+                0x000000000000296c                alt_up_ps2_write_data_byte
+                0x00000000000029e0                alt_up_ps2_wait_for_ack
+                0x0000000000002a48                alt_up_ps2_write_data_byte_with_ack
+                0x0000000000002aac                alt_up_ps2_read_data_byte_timeout
+                0x0000000000002b48                alt_up_ps2_read_data_byte
+                0x0000000000002bb8                alt_up_ps2_clear_fifo
+                0x0000000000002c10                alt_up_ps2_read_fd
+                0x0000000000002c9c                alt_up_ps2_write_fd
+                0x0000000000002d34                alt_up_ps2_open_dev
+ .text          0x0000000000002d74      0x394 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+                0x0000000000002d74                alt_up_rs232_enable_read_interrupt
+                0x0000000000002dd0                alt_up_rs232_disable_read_interrupt
+                0x0000000000002e30                alt_up_rs232_get_used_space_in_read_FIFO
+                0x0000000000002e70                alt_up_rs232_get_available_space_in_write_FIFO
+                0x0000000000002eac                alt_up_rs232_check_parity
+                0x0000000000002ef0                alt_up_rs232_write_data
+                0x0000000000002f30                alt_up_rs232_read_data
+                0x0000000000002fa4                alt_up_rs232_read_fd
+                0x0000000000003034                alt_up_rs232_write_fd
+                0x00000000000030c8                alt_up_rs232_open_dev
+ .text          0x0000000000003108      0x140 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
+                0x0000000000003108                alt_alarm_start
+ .text          0x0000000000003248      0x120 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
+                0x0000000000003298                close
+ .text          0x0000000000003368       0x20 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x0000000000003368                alt_dcache_flush_all
+ .text          0x0000000000003388       0x2c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
+ .text          0x00000000000033b4       0xf4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+                0x0000000000003404                alt_dev_llist_insert
+ .text          0x00000000000034a8       0x60 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
+                0x00000000000034a8                _do_ctors
+ .text          0x0000000000003508       0x60 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
+                0x0000000000003508                _do_dtors
+ .text          0x0000000000003568        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
+ .text          0x0000000000003568       0x90 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
+                0x0000000000003568                alt_find_dev
+ .text          0x00000000000035f8       0x34 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00000000000035f8                alt_icache_flush_all
+ .text          0x000000000000362c      0x140 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
+                0x00000000000036f0                alt_io_redirect
+ .text          0x000000000000376c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .text          0x000000000000376c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .text          0x000000000000376c      0x274 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
+                0x0000000000003888                open
+ .text          0x00000000000039e0       0x64 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
+                0x00000000000039e0                alt_release_fd
+ .text          0x0000000000003a44      0x1a4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000000003a44                alt_alarm_stop
+                0x0000000000003ae0                alt_tick
+ .text          0x0000000000003be8       0x24 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+                0x0000000000003be8                altera_nios2_gen2_irq_init
+ .text          0x0000000000003c0c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .text          0x0000000000003c0c      0x114 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
+                0x0000000000003c0c                alt_find_file
+ .text          0x0000000000003d20       0xb4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
+                0x0000000000003d20                alt_get_fd
+ .text          0x0000000000003dd4       0x90 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
+                0x0000000000003dd4                alt_icache_flush
+ .text          0x0000000000003e64       0x9c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000003e64                alt_exception_cause_generated_bad_addr
+ .text          0x0000000000003f00        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
+ .text.atexit   0x0000000000003f00       0x14 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
+                0x0000000000003f00                atexit
+ .text          0x0000000000003f14        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
+ .text.exit     0x0000000000003f14       0x38 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
+                0x0000000000003f14                exit
+ .text          0x0000000000003f4c        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+ .text          0x0000000000003f4c        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
+ .text          0x0000000000003f4c        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
+ .text.memcmp   0x0000000000003f4c       0x7c c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
+                0x0000000000003f4c                memcmp
+ .text          0x0000000000003fc8        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
+ .text.strlen   0x0000000000003fc8       0x98 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
+                0x0000000000003fc8                strlen
+ .text          0x0000000000004060        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
  .text.__register_exitproc
-                0x0000000000004000      0x118 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
-                0x0000000000004000                __register_exitproc
- .text          0x0000000000004118        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
+                0x0000000000004060      0x118 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
+                0x0000000000004060                __register_exitproc
+ .text          0x0000000000004178        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
  .text.__call_exitprocs
-                0x0000000000004118      0x180 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
-                0x0000000000004118                __call_exitprocs
- .text          0x0000000000004298       0x34 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
-                0x0000000000004298                _exit
+                0x0000000000004178      0x180 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
+                0x0000000000004178                __call_exitprocs
+ .text          0x00000000000042f8       0x34 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
+                0x00000000000042f8                _exit
  *(.gnu.warning.*)
  *(.fini)
                 [!provide]                        PROVIDE (__etext, ABSOLUTE (.))
                 [!provide]                        PROVIDE (_etext, ABSOLUTE (.))
                 [!provide]                        PROVIDE (etext, ABSOLUTE (.))
  *(.eh_frame_hdr)
-                0x00000000000042cc                . = ALIGN (0x4)
+                0x000000000000432c                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__preinit_array_start, ABSOLUTE (.))
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end, ABSOLUTE (.))
@@ -427,231 +427,233 @@ LOAD c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5
  *(.eh_frame)
  *(.gcc_except_table .gcc_except_table.*)
  *(.dynamic)
-                0x00000000000042cc                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+                0x000000000000432c                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
  *(.ctors)
  *(SORT(.ctors.*))
-                0x00000000000042cc                PROVIDE (__CTOR_END__, ABSOLUTE (.))
-                0x00000000000042cc                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+                0x000000000000432c                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x000000000000432c                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
  *(.dtors)
  *(SORT(.dtors.*))
-                0x00000000000042cc                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+                0x000000000000432c                PROVIDE (__DTOR_END__, ABSOLUTE (.))
  *(.jcr)
-                0x00000000000042cc                . = ALIGN (0x4)
+                0x000000000000432c                . = ALIGN (0x4)
 
-.rodata         0x00000000000042cc      0x184
-                0x00000000000042cc                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
-                0x00000000000042cc                . = ALIGN (0x4)
+.rodata         0x000000000000432c      0x20c
+                0x000000000000432c                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x000000000000432c                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x00000000000042cc       0x10 obj/default/seven_seg_hex.o
- .rodata        0x00000000000042dc        0xf C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
- *fill*         0x00000000000042eb        0x1 
- .rodata        0x00000000000042ec      0x151 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
- *fill*         0x000000000000443d        0x3 
- .rodata        0x0000000000004440        0xa C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
- *fill*         0x000000000000444a        0x2 
+ .rodata        0x000000000000432c       0x86 obj/default/buttonISR.o
+ .rodata        0x00000000000043b2       0x10 obj/default/seven_seg_hex.o
+ *fill*         0x00000000000043c2        0x2 
+ .rodata        0x00000000000043c4        0xf C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
+ *fill*         0x00000000000043d3        0x1 
+ .rodata        0x00000000000043d4      0x151 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
+ *fill*         0x0000000000004525        0x3 
+ .rodata        0x0000000000004528        0xa C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
+ *fill*         0x0000000000004532        0x2 
  .rodata.str1.4
-                0x000000000000444c        0x4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+                0x0000000000004534        0x4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
                                           0x2 (size before relaxing)
  *(.rodata1)
-                0x0000000000004450                . = ALIGN (0x4)
-                0x0000000000004450                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
-                0x00000000000042cc                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+                0x0000000000004538                . = ALIGN (0x4)
+                0x0000000000004538                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x000000000000432c                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
 
-.rwdata         0x0000000000004450     0x1994 load address 0x0000000000005de4
-                0x0000000000004450                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
-                0x0000000000004450                . = ALIGN (0x4)
+.rwdata         0x0000000000004538     0x1994 load address 0x0000000000005ecc
+                0x0000000000004538                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x0000000000004538                . = ALIGN (0x4)
  *(.got.plt)
  *(.got)
  *(.data1)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0000000000004450        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp//obj/HAL/src/crt0.o
- .data          0x0000000000004450        0x0 obj/default/HexDisplay.o
- .data          0x0000000000004450        0x0 obj/default/InterruptDemo.o
- .data          0x0000000000004450        0x0 obj/default/buttonISR.o
- .data          0x0000000000004450        0x0 obj/default/lcd.o
- .data          0x0000000000004450        0x0 obj/default/seven_seg_bcd.o
- .data          0x0000000000004450        0x0 obj/default/seven_seg_hex.o
- .data          0x0000000000004450        0x0 obj/default/timerISR.o
- .data          0x0000000000004450        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
- .data          0x0000000000004450        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
- .data          0x0000000000004450        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .data          0x0000000000004450        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
- .data          0x0000000000004450        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
- .data          0x0000000000004450     0x139c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
- .data          0x00000000000057ec        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .data          0x00000000000057ec      0x1a8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
-                0x00000000000057ec                alt_dev_null
-                0x0000000000005814                alt_fd_list
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
- .data          0x0000000000005994        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .data          0x0000000000005994        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
- .data          0x0000000000005994        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
- .data          0x0000000000005994        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+ .data          0x0000000000004538        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp//obj/HAL/src/crt0.o
+ .data          0x0000000000004538        0x0 obj/default/HexDisplay.o
+ .data          0x0000000000004538        0x0 obj/default/InterruptDemo.o
+ .data          0x0000000000004538        0x0 obj/default/buttonISR.o
+ .data          0x0000000000004538        0x0 obj/default/lcd.o
+ .data          0x0000000000004538        0x0 obj/default/seven_seg_bcd.o
+ .data          0x0000000000004538        0x0 obj/default/seven_seg_hex.o
+ .data          0x0000000000004538        0x0 obj/default/timerISR.o
+ .data          0x0000000000004538        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
+ .data          0x0000000000004538        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .data          0x0000000000004538        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .data          0x0000000000004538        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x0000000000004538        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x0000000000004538     0x139c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
+ .data          0x00000000000058d4        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00000000000058d4      0x1a8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
+                0x00000000000058d4                alt_dev_null
+                0x00000000000058fc                alt_fd_list
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .data          0x0000000000005a7c        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .data          0x0000000000005a7c        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
+ .data          0x0000000000005a7c        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
+ .data          0x0000000000005a7c        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
  .data.impure_data
-                0x0000000000005994      0x424 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
- .data          0x0000000000005db8        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
- .data          0x0000000000005db8        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
- .data          0x0000000000005db8        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
- .data          0x0000000000005db8        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
- .data          0x0000000000005db8        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
- .data          0x0000000000005db8        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
-                0x000000000000ddb8                _gp = ABSOLUTE ((. + 0x8000))
+                0x0000000000005a7c      0x424 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+ .data          0x0000000000005ea0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
+ .data          0x0000000000005ea0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
+ .data          0x0000000000005ea0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
+ .data          0x0000000000005ea0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
+ .data          0x0000000000005ea0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
+ .data          0x0000000000005ea0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
+                0x000000000000dea0                _gp = ABSOLUTE ((. + 0x8000))
                 [!provide]                        PROVIDE (gp, _gp)
  *(.rwdata .rwdata.*)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata         0x0000000000005db8        0x4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
-                0x0000000000005db8                alt_priority_mask
- .sdata         0x0000000000005dbc       0x14 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
-                0x0000000000005dbc                alt_fs_list
-                0x0000000000005dc4                alt_dev_list
-                0x0000000000005dcc                alt_max_fd
- .sdata         0x0000000000005dd0        0x4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
-                0x0000000000005dd0                alt_errno
- .sdata         0x0000000000005dd4        0x8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
-                0x0000000000005dd4                alt_alarm_list
+ .sdata         0x0000000000005ea0        0x4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000005ea0                alt_priority_mask
+ .sdata         0x0000000000005ea4       0x14 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
+                0x0000000000005ea4                alt_fs_list
+                0x0000000000005eac                alt_dev_list
+                0x0000000000005eb4                alt_max_fd
+ .sdata         0x0000000000005eb8        0x4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
+                0x0000000000005eb8                alt_errno
+ .sdata         0x0000000000005ebc        0x8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000000005ebc                alt_alarm_list
  .sdata._global_impure_ptr
-                0x0000000000005ddc        0x4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
-                0x0000000000005ddc                _global_impure_ptr
+                0x0000000000005ec4        0x4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+                0x0000000000005ec4                _global_impure_ptr
  .sdata._impure_ptr
-                0x0000000000005de0        0x4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
-                0x0000000000005de0                _impure_ptr
+                0x0000000000005ec8        0x4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+                0x0000000000005ec8                _impure_ptr
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x0000000000005de4                . = ALIGN (0x4)
-                0x0000000000005de4                _edata = ABSOLUTE (.)
+                0x0000000000005ecc                . = ALIGN (0x4)
+                0x0000000000005ecc                _edata = ABSOLUTE (.)
                 [!provide]                        PROVIDE (edata, ABSOLUTE (.))
-                0x0000000000005de4                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
-                0x0000000000005de4                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+                0x0000000000005ecc                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0000000000005ecc                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
 
-.bss            0x0000000000007778      0x128
-                0x0000000000007778                __bss_start = ABSOLUTE (.)
+.bss            0x0000000000007860      0x128
+                0x0000000000007860                __bss_start = ABSOLUTE (.)
                 [!provide]                        PROVIDE (__sbss_start, ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_start, ABSOLUTE (.))
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0x0000000000007778        0x4 obj/default/InterruptDemo.o
- .sbss          0x000000000000777c        0x1 obj/default/InterruptDemo.o
-                0x000000000000777c                display_as_bcd
- *fill*         0x000000000000777d        0x3 
- .sbss          0x0000000000007780        0x4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
-                0x0000000000007780                alt_irq_active
- .sbss          0x0000000000007784        0xc C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
-                0x0000000000007784                alt_argc
-                0x0000000000007788                alt_argv
-                0x000000000000778c                alt_envp
- .sbss          0x0000000000007790        0x8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
-                0x0000000000007790                _alt_tick_rate
-                0x0000000000007794                _alt_nticks
- .sbss          0x0000000000007798        0x4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
-                0x0000000000007798                alt_instruction_exception_handler
- .sbss          0x000000000000779c        0x4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
-                0x000000000000779c                errno
+ .sbss          0x0000000000007860        0x4 obj/default/InterruptDemo.o
+ .sbss          0x0000000000007864        0x1 obj/default/InterruptDemo.o
+                0x0000000000007864                display_as_bcd
+ *fill*         0x0000000000007865        0x3 
+ .sbss          0x0000000000007868        0x4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
+                0x0000000000007868                alt_irq_active
+ .sbss          0x000000000000786c        0xc C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
+                0x000000000000786c                alt_argc
+                0x0000000000007870                alt_argv
+                0x0000000000007874                alt_envp
+ .sbss          0x0000000000007878        0x8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
+                0x0000000000007878                _alt_tick_rate
+                0x000000000000787c                _alt_nticks
+ .sbss          0x0000000000007880        0x4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+                0x0000000000007880                alt_instruction_exception_handler
+ .sbss          0x0000000000007884        0x4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
+                0x0000000000007884                errno
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
  *(.scommon)
                 [!provide]                        PROVIDE (__sbss_end, ABSOLUTE (.))
                 [!provide]                        PROVIDE (___sbss_end, ABSOLUTE (.))
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp//obj/HAL/src/crt0.o
- .bss           0x00000000000077a0        0x0 obj/default/HexDisplay.o
- .bss           0x00000000000077a0        0x0 obj/default/InterruptDemo.o
- .bss           0x00000000000077a0        0x0 obj/default/buttonISR.o
- .bss           0x00000000000077a0        0x0 obj/default/lcd.o
- .bss           0x00000000000077a0        0x0 obj/default/seven_seg_bcd.o
- .bss           0x00000000000077a0        0x0 obj/default/seven_seg_hex.o
- .bss           0x00000000000077a0        0x0 obj/default/timerISR.o
- .bss           0x00000000000077a0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .bss           0x00000000000077a0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
- .bss           0x00000000000077a0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
- .bss           0x00000000000077a0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
- .bss           0x00000000000077a0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
- .bss           0x00000000000077a0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
- .bss           0x00000000000077a0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
- .bss           0x00000000000077a0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
- .bss           0x00000000000077a0        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
- .bss           0x00000000000077a0        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp//obj/HAL/src/crt0.o
+ .bss           0x0000000000007888        0x0 obj/default/HexDisplay.o
+ .bss           0x0000000000007888        0x0 obj/default/InterruptDemo.o
+ .bss           0x0000000000007888        0x0 obj/default/buttonISR.o
+ .bss           0x0000000000007888        0x0 obj/default/lcd.o
+ .bss           0x0000000000007888        0x0 obj/default/seven_seg_bcd.o
+ .bss           0x0000000000007888        0x0 obj/default/seven_seg_hex.o
+ .bss           0x0000000000007888        0x0 obj/default/timerISR.o
+ .bss           0x0000000000007888        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .bss           0x0000000000007888        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
+ .bss           0x0000000000007888        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
+ .bss           0x0000000000007888        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+ .bss           0x0000000000007888        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
+ .bss           0x0000000000007888        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
+ .bss           0x0000000000007888        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
+ .bss           0x0000000000007888        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
+ .bss           0x0000000000007888        0x0 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000007888        0x0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
  *(COMMON)
- COMMON         0x00000000000077a0      0x100 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
-                0x00000000000077a0                alt_irq
-                0x00000000000078a0                . = ALIGN (0x4)
-                0x00000000000078a0                __bss_end = ABSOLUTE (.)
+ COMMON         0x0000000000007888      0x100 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
+                0x0000000000007888                alt_irq
+                0x0000000000007988                . = ALIGN (0x4)
+                0x0000000000007988                __bss_end = ABSOLUTE (.)
 
-.SDRAM          0x00000000000078a0        0x0
+.SDRAM          0x0000000000007988        0x0
                 [!provide]                        PROVIDE (_alt_partition_SDRAM_start, ABSOLUTE (.))
  *(.SDRAM .SDRAM. SDRAM.*)
-                0x00000000000078a0                . = ALIGN (0x4)
+                0x0000000000007988                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_alt_partition_SDRAM_end, ABSOLUTE (.))
-                0x00000000000078a0                _end = ABSOLUTE (.)
-                0x00000000000078a0                end = ABSOLUTE (.)
-                0x00000000000078a0                __alt_stack_base = ABSOLUTE (.)
+                0x0000000000007988                _end = ABSOLUTE (.)
+                0x0000000000007988                end = ABSOLUTE (.)
+                0x0000000000007988                __alt_stack_base = ABSOLUTE (.)
                 [!provide]                        PROVIDE (_alt_partition_SDRAM_load_addr, LOADADDR (.SDRAM))
 
 .VGA_Subsystem_Char_Buf_Subsystem_Onchip_SRAM
-                0x0000000009000000        0x0 load address 0x00000000000078a0
+                0x0000000009000000        0x0 load address 0x0000000000007988
                 [!provide]                        PROVIDE (_alt_partition_VGA_Subsystem_Char_Buf_Subsystem_Onchip_SRAM_start, ABSOLUTE (.))
  *(.VGA_Subsystem_Char_Buf_Subsystem_Onchip_SRAM .VGA_Subsystem_Char_Buf_Subsystem_Onchip_SRAM. VGA_Subsystem_Char_Buf_Subsystem_Onchip_SRAM.*)
                 0x0000000009000000                . = ALIGN (0x4)
@@ -860,179 +862,179 @@ LOAD c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x99c8
+.debug_info     0x0000000000000000     0x9a4f
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000       0x68 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp//obj/HAL/src/crt0.o
  .debug_info    0x0000000000000068       0xe6 obj/default/HexDisplay.o
  .debug_info    0x000000000000014e      0x107 obj/default/InterruptDemo.o
- .debug_info    0x0000000000000255       0xd7 obj/default/buttonISR.o
- .debug_info    0x000000000000032c       0xe1 obj/default/lcd.o
- .debug_info    0x000000000000040d      0x14b obj/default/seven_seg_bcd.o
- .debug_info    0x0000000000000558      0x143 obj/default/seven_seg_hex.o
- .debug_info    0x000000000000069b       0xbb obj/default/timerISR.o
- .debug_info    0x0000000000000756      0x144 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
- .debug_info    0x000000000000089a      0x329 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
- .debug_info    0x0000000000000bc3       0x88 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .debug_info    0x0000000000000c4b      0x145 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
- .debug_info    0x0000000000000d90      0x157 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
- .debug_info    0x0000000000000ee7      0x959 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_info    0x0000000000001840      0x52e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .debug_info    0x0000000000001d6e      0x3c3 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
- .debug_info    0x0000000000002131      0x280 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
- .debug_info    0x00000000000023b1      0x35b C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .debug_info    0x000000000000270c      0x356 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_info    0x0000000000002a62      0x249 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
- .debug_info    0x0000000000002cab      0x601 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
- .debug_info    0x00000000000032ac      0x568 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
- .debug_info    0x0000000000003814      0x7d4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
- .debug_info    0x0000000000003fe8      0x568 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
- .debug_info    0x0000000000004550      0x2e2 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
- .debug_info    0x0000000000004832      0x321 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
- .debug_info    0x0000000000004b53       0x92 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_info    0x0000000000004be5      0x49c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
- .debug_info    0x0000000000005081      0x1a9 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
- .debug_info    0x000000000000522a       0x83 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .debug_info    0x00000000000052ad       0x83 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
- .debug_info    0x0000000000005330       0xa6 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
- .debug_info    0x00000000000053d6      0x2e9 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
- .debug_info    0x00000000000056bf       0x92 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_info    0x0000000000005751      0x4a5 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
- .debug_info    0x0000000000005bf6       0x71 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .debug_info    0x0000000000005c67      0x1a7 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_info    0x0000000000005e0e      0x3bb C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
- .debug_info    0x00000000000061c9      0x2b0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
- .debug_info    0x0000000000006479      0x2af C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_info    0x0000000000006728       0xb8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_info    0x00000000000067e0       0x77 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .debug_info    0x0000000000006857      0x2e6 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
- .debug_info    0x0000000000006b3d      0x310 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
- .debug_info    0x0000000000006e4d       0xdc C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
- .debug_info    0x0000000000006f29      0x1e7 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_info    0x0000000000007110       0xfe c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
- .debug_info    0x000000000000720e      0x8e4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
- .debug_info    0x0000000000007af2      0x8a1 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
- .debug_info    0x0000000000008393       0x8a c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
- .debug_info    0x000000000000841d      0x11a c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
- .debug_info    0x0000000000008537       0xe2 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
- .debug_info    0x0000000000008619      0x934 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
- .debug_info    0x0000000000008f4d      0x965 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
- .debug_info    0x00000000000098b2      0x116 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_info    0x0000000000000255      0x15e obj/default/buttonISR.o
+ .debug_info    0x00000000000003b3       0xe1 obj/default/lcd.o
+ .debug_info    0x0000000000000494      0x14b obj/default/seven_seg_bcd.o
+ .debug_info    0x00000000000005df      0x143 obj/default/seven_seg_hex.o
+ .debug_info    0x0000000000000722       0xbb obj/default/timerISR.o
+ .debug_info    0x00000000000007dd      0x144 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
+ .debug_info    0x0000000000000921      0x329 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_info    0x0000000000000c4a       0x88 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_info    0x0000000000000cd2      0x145 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x0000000000000e17      0x157 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x0000000000000f6e      0x959 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000000000018c7      0x52e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_info    0x0000000000001df5      0x3c3 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_info    0x00000000000021b8      0x280 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_info    0x0000000000002438      0x35b C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_info    0x0000000000002793      0x356 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x0000000000002ae9      0x249 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_info    0x0000000000002d32      0x601 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
+ .debug_info    0x0000000000003333      0x568 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
+ .debug_info    0x000000000000389b      0x7d4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_info    0x000000000000406f      0x568 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_info    0x00000000000045d7      0x2e2 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_info    0x00000000000048b9      0x321 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_info    0x0000000000004bda       0x92 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x0000000000004c6c      0x49c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_info    0x0000000000005108      0x1a9 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_info    0x00000000000052b1       0x83 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_info    0x0000000000005334       0x83 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_info    0x00000000000053b7       0xa6 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_info    0x000000000000545d      0x2e9 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_info    0x0000000000005746       0x92 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000000000057d8      0x4a5 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_info    0x0000000000005c7d       0x71 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_info    0x0000000000005cee      0x1a7 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_info    0x0000000000005e95      0x3bb C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_info    0x0000000000006250      0x2b0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_info    0x0000000000006500      0x2af C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_info    0x00000000000067af       0xb8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000000000006867       0x77 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_info    0x00000000000068de      0x2e6 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_info    0x0000000000006bc4      0x310 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_info    0x0000000000006ed4       0xdc C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_info    0x0000000000006fb0      0x1e7 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_info    0x0000000000007197       0xfe c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
+ .debug_info    0x0000000000007295      0x8e4 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
+ .debug_info    0x0000000000007b79      0x8a1 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+ .debug_info    0x000000000000841a       0x8a c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
+ .debug_info    0x00000000000084a4      0x11a c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
+ .debug_info    0x00000000000085be       0xe2 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
+ .debug_info    0x00000000000086a0      0x934 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
+ .debug_info    0x0000000000008fd4      0x965 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x0000000000009939      0x116 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
 
-.debug_abbrev   0x0000000000000000     0x3309
+.debug_abbrev   0x0000000000000000     0x3351
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000       0x12 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp//obj/HAL/src/crt0.o
  .debug_abbrev  0x0000000000000012       0xaa obj/default/HexDisplay.o
  .debug_abbrev  0x00000000000000bc       0x94 obj/default/InterruptDemo.o
- .debug_abbrev  0x0000000000000150       0x83 obj/default/buttonISR.o
- .debug_abbrev  0x00000000000001d3       0x99 obj/default/lcd.o
- .debug_abbrev  0x000000000000026c       0xaf obj/default/seven_seg_bcd.o
- .debug_abbrev  0x000000000000031b       0xa8 obj/default/seven_seg_hex.o
- .debug_abbrev  0x00000000000003c3       0x83 obj/default/timerISR.o
- .debug_abbrev  0x0000000000000446       0xa3 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
- .debug_abbrev  0x00000000000004e9      0x186 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
- .debug_abbrev  0x000000000000066f       0x40 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .debug_abbrev  0x00000000000006af       0x9f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
- .debug_abbrev  0x000000000000074e       0xc1 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
- .debug_abbrev  0x000000000000080f      0x19f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_abbrev  0x00000000000009ae      0x127 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .debug_abbrev  0x0000000000000ad5      0x19e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
- .debug_abbrev  0x0000000000000c73      0x111 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
- .debug_abbrev  0x0000000000000d84      0x1aa C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .debug_abbrev  0x0000000000000f2e      0x1a8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_abbrev  0x00000000000010d6      0x155 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
- .debug_abbrev  0x000000000000122b      0x156 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
- .debug_abbrev  0x0000000000001381      0x135 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
- .debug_abbrev  0x00000000000014b6      0x1a1 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
- .debug_abbrev  0x0000000000001657      0x135 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
- .debug_abbrev  0x000000000000178c      0x162 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
- .debug_abbrev  0x00000000000018ee      0x11f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
- .debug_abbrev  0x0000000000001a0d       0x42 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_abbrev  0x0000000000001a4f       0xd9 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
- .debug_abbrev  0x0000000000001b28      0x114 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
- .debug_abbrev  0x0000000000001c3c       0x79 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .debug_abbrev  0x0000000000001cb5       0x79 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
- .debug_abbrev  0x0000000000001d2e       0x5a C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
- .debug_abbrev  0x0000000000001d88       0xf0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
- .debug_abbrev  0x0000000000001e78       0x42 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_abbrev  0x0000000000001eba      0x114 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
- .debug_abbrev  0x0000000000001fce       0x12 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .debug_abbrev  0x0000000000001fe0      0x13a C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_abbrev  0x000000000000211a      0x148 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
- .debug_abbrev  0x0000000000002262       0xde C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
- .debug_abbrev  0x0000000000002340      0x16b C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_abbrev  0x00000000000024ab       0x67 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_abbrev  0x0000000000002512       0x12 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .debug_abbrev  0x0000000000002524       0xf0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
- .debug_abbrev  0x0000000000002614      0x10d C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
- .debug_abbrev  0x0000000000002721       0x8c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
- .debug_abbrev  0x00000000000027ad       0xdc C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_abbrev  0x0000000000002889       0xaa c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
- .debug_abbrev  0x0000000000002933      0x1e5 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
- .debug_abbrev  0x0000000000002b18      0x18f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
- .debug_abbrev  0x0000000000002ca7       0x37 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
- .debug_abbrev  0x0000000000002cde       0x7f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
- .debug_abbrev  0x0000000000002d5d       0x90 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
- .debug_abbrev  0x0000000000002ded      0x21e c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
- .debug_abbrev  0x000000000000300b      0x22e c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
- .debug_abbrev  0x0000000000003239       0xd0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_abbrev  0x0000000000000150       0xcb obj/default/buttonISR.o
+ .debug_abbrev  0x000000000000021b       0x99 obj/default/lcd.o
+ .debug_abbrev  0x00000000000002b4       0xaf obj/default/seven_seg_bcd.o
+ .debug_abbrev  0x0000000000000363       0xa8 obj/default/seven_seg_hex.o
+ .debug_abbrev  0x000000000000040b       0x83 obj/default/timerISR.o
+ .debug_abbrev  0x000000000000048e       0xa3 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0000000000000531      0x186 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_abbrev  0x00000000000006b7       0x40 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_abbrev  0x00000000000006f7       0x9f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x0000000000000796       0xc1 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000000000000857      0x19f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x00000000000009f6      0x127 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_abbrev  0x0000000000000b1d      0x19e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_abbrev  0x0000000000000cbb      0x111 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_abbrev  0x0000000000000dcc      0x1aa C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_abbrev  0x0000000000000f76      0x1a8 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_abbrev  0x000000000000111e      0x155 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_abbrev  0x0000000000001273      0x156 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
+ .debug_abbrev  0x00000000000013c9      0x135 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
+ .debug_abbrev  0x00000000000014fe      0x1a1 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_abbrev  0x000000000000169f      0x135 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_abbrev  0x00000000000017d4      0x162 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_abbrev  0x0000000000001936      0x11f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_abbrev  0x0000000000001a55       0x42 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x0000000000001a97       0xd9 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_abbrev  0x0000000000001b70      0x114 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_abbrev  0x0000000000001c84       0x79 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_abbrev  0x0000000000001cfd       0x79 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_abbrev  0x0000000000001d76       0x5a C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_abbrev  0x0000000000001dd0       0xf0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_abbrev  0x0000000000001ec0       0x42 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x0000000000001f02      0x114 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_abbrev  0x0000000000002016       0x12 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_abbrev  0x0000000000002028      0x13a C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_abbrev  0x0000000000002162      0x148 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_abbrev  0x00000000000022aa       0xde C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_abbrev  0x0000000000002388      0x16b C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_abbrev  0x00000000000024f3       0x67 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_abbrev  0x000000000000255a       0x12 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_abbrev  0x000000000000256c       0xf0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_abbrev  0x000000000000265c      0x10d C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_abbrev  0x0000000000002769       0x8c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_abbrev  0x00000000000027f5       0xdc C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_abbrev  0x00000000000028d1       0xaa c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x000000000000297b      0x1e5 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
+ .debug_abbrev  0x0000000000002b60      0x18f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x0000000000002cef       0x37 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
+ .debug_abbrev  0x0000000000002d26       0x7f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x0000000000002da5       0x90 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x0000000000002e35      0x21e c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x0000000000003053      0x22e c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0000000000003281       0xd0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
 
-.debug_line     0x0000000000000000     0x3780
+.debug_line     0x0000000000000000     0x3788
  *(.debug_line)
  .debug_line    0x0000000000000000       0x6c C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp//obj/HAL/src/crt0.o
  .debug_line    0x000000000000006c       0x98 obj/default/HexDisplay.o
  .debug_line    0x0000000000000104       0xee obj/default/InterruptDemo.o
- .debug_line    0x00000000000001f2       0xa1 obj/default/buttonISR.o
- .debug_line    0x0000000000000293       0x52 obj/default/lcd.o
- .debug_line    0x00000000000002e5      0x149 obj/default/seven_seg_bcd.o
- .debug_line    0x000000000000042e       0xbc obj/default/seven_seg_hex.o
- .debug_line    0x00000000000004ea       0x8e obj/default/timerISR.o
- .debug_line    0x0000000000000578      0x18c c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
- .debug_line    0x0000000000000704      0x159 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
- .debug_line    0x000000000000085d       0x50 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
- .debug_line    0x00000000000008ad       0x8e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
- .debug_line    0x000000000000093b       0xd1 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
- .debug_line    0x0000000000000a0c      0x2f2 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_line    0x0000000000000cfe      0x12f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
- .debug_line    0x0000000000000e2d      0x19f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
- .debug_line    0x0000000000000fcc      0x131 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
- .debug_line    0x00000000000010fd      0x185 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
- .debug_line    0x0000000000001282      0x184 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_line    0x0000000000001406      0x113 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
- .debug_line    0x0000000000001519      0x1c4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
- .debug_line    0x00000000000016dd      0x13d C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
- .debug_line    0x000000000000181a      0x1a6 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
- .debug_line    0x00000000000019c0      0x13f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
- .debug_line    0x0000000000001aff      0x10e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
- .debug_line    0x0000000000001c0d      0x15e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
- .debug_line    0x0000000000001d6b       0x51 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_line    0x0000000000001dbc       0xf0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
- .debug_line    0x0000000000001eac       0xd0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
- .debug_line    0x0000000000001f7c       0x59 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
- .debug_line    0x0000000000001fd5       0x59 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
- .debug_line    0x000000000000202e       0x51 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
- .debug_line    0x000000000000207f       0xb5 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
- .debug_line    0x0000000000002134       0x50 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_line    0x0000000000002184      0x12b C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
- .debug_line    0x00000000000022af       0x6b C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
- .debug_line    0x000000000000231a       0xcd C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
- .debug_line    0x00000000000023e7      0x12a C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
- .debug_line    0x0000000000002511       0xae C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
- .debug_line    0x00000000000025bf      0x113 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
- .debug_line    0x00000000000026d2       0x8d C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_line    0x000000000000275f       0xb3 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
- .debug_line    0x0000000000002812       0xd1 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
- .debug_line    0x00000000000028e3       0xd5 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
- .debug_line    0x00000000000029b8       0x81 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
- .debug_line    0x0000000000002a39       0xba C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
- .debug_line    0x0000000000002af3       0xe7 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
- .debug_line    0x0000000000002bda      0x1fc c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
- .debug_line    0x0000000000002dd6      0x160 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
- .debug_line    0x0000000000002f36       0x5f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
- .debug_line    0x0000000000002f95      0x176 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
- .debug_line    0x000000000000310b      0x16f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
- .debug_line    0x000000000000327a      0x21f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
- .debug_line    0x0000000000003499      0x23a c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
- .debug_line    0x00000000000036d3       0xad C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
+ .debug_line    0x00000000000001f2       0xa9 obj/default/buttonISR.o
+ .debug_line    0x000000000000029b       0x52 obj/default/lcd.o
+ .debug_line    0x00000000000002ed      0x149 obj/default/seven_seg_bcd.o
+ .debug_line    0x0000000000000436       0xbc obj/default/seven_seg_hex.o
+ .debug_line    0x00000000000004f2       0x8e obj/default/timerISR.o
+ .debug_line    0x0000000000000580      0x18c c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcpy.o)
+ .debug_line    0x000000000000070c      0x159 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_register.o)
+ .debug_line    0x0000000000000865       0x50 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_vars.o)
+ .debug_line    0x00000000000008b5       0x8e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000000943       0xd1 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x0000000000000a14      0x2f2 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x0000000000000d06      0x12f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_fd.o)
+ .debug_line    0x0000000000000e35      0x19f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_init.o)
+ .debug_line    0x0000000000000fd4      0x131 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_ioctl.o)
+ .debug_line    0x0000000000001105      0x185 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_read.o)
+ .debug_line    0x000000000000128a      0x184 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x000000000000140e      0x113 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_avalon_timer_sc.o)
+ .debug_line    0x0000000000001521      0x1c4 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_character_lcd.o)
+ .debug_line    0x00000000000016e5      0x13d C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_irda.o)
+ .debug_line    0x0000000000001822      0x1a6 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_ps2.o)
+ .debug_line    0x00000000000019c8      0x13f C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_up_avalon_rs232.o)
+ .debug_line    0x0000000000001b07      0x10e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_alarm_start.o)
+ .debug_line    0x0000000000001c15      0x15e C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_close.o)
+ .debug_line    0x0000000000001d73       0x51 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000001dc4       0xf0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev.o)
+ .debug_line    0x0000000000001eb4       0xd0 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_dev_llist_insert.o)
+ .debug_line    0x0000000000001f84       0x59 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_ctors.o)
+ .debug_line    0x0000000000001fdd       0x59 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_do_dtors.o)
+ .debug_line    0x0000000000002036       0x51 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_errno.o)
+ .debug_line    0x0000000000002087       0xb5 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_dev.o)
+ .debug_line    0x000000000000213c       0x50 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000000000000218c      0x12b C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_io_redirect.o)
+ .debug_line    0x00000000000022b7       0x6b C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_entry.o)
+ .debug_line    0x0000000000002322       0xcd C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_irq_handler.o)
+ .debug_line    0x00000000000023ef      0x12a C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_open.o)
+ .debug_line    0x0000000000002519       0xae C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_release_fd.o)
+ .debug_line    0x00000000000025c7      0x113 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_tick.o)
+ .debug_line    0x00000000000026da       0x8d C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x0000000000002767       0xb3 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exception_entry.o)
+ .debug_line    0x000000000000281a       0xd1 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_find_file.o)
+ .debug_line    0x00000000000028eb       0xd5 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_get_fd.o)
+ .debug_line    0x00000000000029c0       0x81 C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_icache_flush.o)
+ .debug_line    0x0000000000002a41       0xba C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_instruction_exception_entry.o)
+ .debug_line    0x0000000000002afb       0xe7 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-atexit.o)
+ .debug_line    0x0000000000002be2      0x1fc c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-exit.o)
+ .debug_line    0x0000000000002dde      0x160 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-impure.o)
+ .debug_line    0x0000000000002f3e       0x5f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-int_errno.o)
+ .debug_line    0x0000000000002f9d      0x176 c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-memcmp.o)
+ .debug_line    0x0000000000003113      0x16f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-strlen.o)
+ .debug_line    0x0000000000003282      0x21f c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__atexit.o)
+ .debug_line    0x00000000000034a1      0x23a c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.2.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mhw-mulx\libc.a(lib_a-__call_atexit.o)
+ .debug_line    0x00000000000036db       0xad C:/Users/psmith04/Documents/FPGA/InterruptsNIOS_bsp/\libhal_bsp.a(alt_exit.o)
 
 .debug_frame    0x0000000000000000     0x13e0
  *(.debug_frame)
@@ -1091,9 +1093,9 @@ LOAD c:/altera/16.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5
                                         0x14c (size before relaxing)
  .debug_str     0x0000000000000120       0x4d obj/default/InterruptDemo.o
                                         0x176 (size before relaxing)
- .debug_str     0x000000000000016d       0x2f obj/default/buttonISR.o
-                                        0x13b (size before relaxing)
- .debug_str     0x000000000000019c       0x48 obj/default/lcd.o
+ .debug_str     0x000000000000016d       0x43 obj/default/buttonISR.o
+                                        0x14f (size before relaxing)
+ .debug_str     0x00000000000001b0       0x34 obj/default/lcd.o
                                          0xca (size before relaxing)
  .debug_str     0x00000000000001e4       0x41 obj/default/seven_seg_bcd.o
                                         0x162 (size before relaxing)
